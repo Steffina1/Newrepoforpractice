@@ -1,0 +1,1 @@
+{"uuid":"d72ffd3f-a220-43a4-9406-7c3cf91e2064","name":"Scenario: Test if user is able to get batch Id when sending invalid request","children":["ba59fd92-f7f0-4abc-bb81-bb6da3728389"],"befores":[],"afters":[],"start":1674227696687,"stop":1674227696700}
