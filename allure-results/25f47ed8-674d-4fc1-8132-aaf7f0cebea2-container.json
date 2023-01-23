@@ -1,0 +1,1 @@
+{"uuid":"25f47ed8-674d-4fc1-8132-aaf7f0cebea2","name":"Scenario: User able to delete a Batch by ID with invalid base URL.","children":["06e3e2b2-3393-4109-9bc7-bffd55e0d9f5"],"befores":[],"afters":[],"start":1674342379682,"stop":1674342379688}

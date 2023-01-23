@@ -1,0 +1,1 @@
+{"uuid":"027b34c8-c4b9-48c4-8721-b979df3aef50","name":"Scenario: Test if user able to get a Batch by progID when sending valid request","children":["0732b935-5c6a-4113-9c09-0602638627b3"],"befores":[],"afters":[],"start":1674339765649,"stop":1674339765664}

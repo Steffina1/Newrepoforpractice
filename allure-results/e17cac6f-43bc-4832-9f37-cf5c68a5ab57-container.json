@@ -1,0 +1,1 @@
+{"uuid":"e17cac6f-43bc-4832-9f37-cf5c68a5ab57","name":"Scenario: Test if JSON schema matches the response while sending valid request","children":["ea6f81a3-3955-45e1-b544-71311ebba9d3"],"befores":[],"afters":[],"start":1674341534489,"stop":1674341534503}

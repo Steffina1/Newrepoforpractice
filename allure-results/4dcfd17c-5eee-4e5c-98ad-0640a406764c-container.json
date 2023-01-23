@@ -1,0 +1,1 @@
+{"uuid":"4dcfd17c-5eee-4e5c-98ad-0640a406764c","name":"Scenario Outline: Test if user is able to get all Programs when sending invalid request","children":["f3552bb8-ccbf-497f-9624-851c57f122a9"],"befores":[],"afters":[],"start":1674256494344,"stop":1674256494363}

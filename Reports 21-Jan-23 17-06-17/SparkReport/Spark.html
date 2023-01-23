@@ -1,0 +1,3099 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Framework</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">API LMS</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 21, 2023 17:06:17</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 21, 2023 17:06:17</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 21, 2023 17:06:20</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>9</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>9</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>36</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>174</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Validate Post Request to Create Program":0.047,"To test the batch using DELETE":0.24,"To test the program using DELETE":0.37,"Test the Batch using GET":0.159,"Test the Program using GET":0.087,"To test the Batch by program ID using Get Method.":0.065,"Test the Batch by name using GET":0.094,"To test the program by ID using Get Method":0.065,"Test Batch and Program with invalid uri":0.054
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@tag</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@getallbatches</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@testcase3programs</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@getprogbyid</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@getallprograms</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test1getallbatches</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@getbatchbyname</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test4getbatchbyname</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test2getbatchbyname</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@getallbatchbyname</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test3getallbatches</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@testcase1programs</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Invaliduri</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test1getbatchbyname</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test3getbatchbyname</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Getallprograms</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tag1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test2getallbatches</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@testcase2programs</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@getbatchbyprogID</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Steffina</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>LMS Api</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Google Chrome</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 9,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 36,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 174,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@tag</a><a class="dropdown-item" href="#">@getallbatches</a><a class="dropdown-item" href="#">@testcase3programs</a><a class="dropdown-item" href="#">@getprogbyid</a><a class="dropdown-item" href="#">@getallprograms</a><a class="dropdown-item" href="#">@test1getallbatches</a><a class="dropdown-item" href="#">@getbatchbyname</a><a class="dropdown-item" href="#">@test4getbatchbyname</a><a class="dropdown-item" href="#">@test2getbatchbyname</a><a class="dropdown-item" href="#">@getallbatchbyname</a><a class="dropdown-item" href="#">@test3getallbatches</a><a class="dropdown-item" href="#">@testcase1programs</a><a class="dropdown-item" href="#">@Invaliduri</a><a class="dropdown-item" href="#">@test1getbatchbyname</a><a class="dropdown-item" href="#">@test3getbatchbyname</a><a class="dropdown-item" href="#">@Getallprograms</a><a class="dropdown-item" href="#">@tag1</a><a class="dropdown-item" href="#">@test2getallbatches</a><a class="dropdown-item" href="#">@testcase2programs</a><a class="dropdown-item" href="#">@getbatchbyprogID</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate Post Request to Create Program</p>
+            <p class="text-sm">
+              <span>5:06:19 PM</span> / <span>00:00:00:047</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate Post Request to Create Program</h5>
+<span class='badge badge-success'>01.21.2023 5:06:19 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:19 PM</span>
+<span class='badge badge-default'>00:00:00:047</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User able to create Program</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Createprogram.user_sends_request_with_the_endpoint_to_create_program()">
+                <span>Given User sends request with the endpoint to create program</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Createprogram.user_sends_a_request_body_with_valid_endpoint_to_create_program()">
+                <span>When User sends a request body with valid endpoint to create Program.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Createprogram.validate_response_status(java.lang.Integer)">
+                <span>Then Validate response status <201>.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Createprogram.validate_response_body_for_program_name_program_description_program_status()">
+                <span>And Validate response body for programName,programDescription,programStatus</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Createprogram.validate_response_headers_should_be_application_json_format()">
+                <span>And Validate response headers should be application json format</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Createprogram.verify_response_body_schema_in_json_format(java.lang.String)">
+                <span>And Verify response body schema './src/test/resources/configuration/JsonSchema_Program/postRequest/Post_ValidRequest.json' in json format.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Createprogram.verify_the_values_are_present_in_db()">
+                <span>And Verify the values are present in DB</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To test the batch using DELETE</p>
+            <p class="text-sm">
+              <span>5:06:19 PM</span> / <span>00:00:00:240</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">To test the batch using DELETE</h5>
+<span class='badge badge-success'>01.21.2023 5:06:19 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:19 PM</span>
+<span class='badge badge-default'>00:00:00:240</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>User able to delete the Batch by ID with valid request.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_sends_the_base_url_to_delete(java.lang.Integer)">
+                <span>Given User sends the base url to delete <3518>.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_sends_request_to_delete_with_existing_batch_id()">
+                <span>When User sends request to delete with existing batch ID.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.status_code_should_be(java.lang.String)">
+                <span>Then status code should be '200 ok'.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.verify_content_type_header_should_be_application_json()">
+                <span>And Verify content type header should be application/json.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.verify_if_status_line_is(java.lang.String)">
+                <span>And Verify if status line is 'HTTP/1.1 200'.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>User able to delete a Batch by ID with invalid endpoint.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_sends_a_invalid_request_to_delete_a(java.lang.Integer)">
+                <span>Given User sends a invalid request to delete a  <3530>.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_sends_a_request_body_with_invalid_endpoint()">
+                <span>When User sends a request body with invalid endpoint.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.verify_status_code_is(java.lang.String)">
+                <span>Then Verify status code is ' 404 Not Found'.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.verify_content_type_header(java.lang.String)">
+                <span>And Verify content type header 'application/json'.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>User ableto delete a Batch by ID with invalid batchID.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_send_base_url_to_delete_batch_with_invalid(java.lang.Integer)">
+                <span>Given User send base URL to delete batch with invalid <3530>.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_send_valid_request_with_invalid_batch_id_and_its_endpoint()">
+                <span>When User send valid request with invalid Batch ID and its endpoint.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.the_status_code_should_be_bad_request()">
+                <span>Then the  status code should be bad request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>User able to delete a Batch by ID with invalid base URL.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_sends_invalid_base_url_to_delete_a_batch_id()">
+                <span>Given User sends invalid base url to delete a Batch ID.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_sends_invalid_base_url_with_valid_endpoint()">
+                <span>When User sends invalid base url with valid endpoint.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.verify_status_code(java.lang.String)">
+                <span>Then Verify  status code '503 Service unavailable'.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="30"><span class="badge log pass-bg mr-2">Pass</span>User able to delete a Batch by ID with invalid request.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_sends_a_base_url_with_batch_id_to_delete(java.lang.Integer)">
+                <span>Given User sends a base URL with batch ID to delete <3530>.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.user_sends_a_request_with_invalid_method_to_delete_batch_id()">
+                <span>When User sends a request with invalid method to delete batch ID.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DeletebatchbyId.verify_if_the_response_status_code_is_method_not_allowed()">
+                <span>Then Verify if the response  status code is method not allowed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To test the program using DELETE</p>
+            <p class="text-sm">
+              <span>5:06:19 PM</span> / <span>00:00:00:370</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">To test the program using DELETE</h5>
+<span class='badge badge-success'>01.21.2023 5:06:19 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-default'>00:00:00:370</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>To test the program using DELETE</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_base_url_to_delete(java.lang.String)">
+                <span>Given User sends base URL to delete "LMS practic test".</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_request_with_valid_program_name()">
+                <span>When User sends request with valid program name.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_status_code_success()">
+                <span>Then User status code success.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.content_type_header_should_be_application_json()">
+                <span>And content type header should be application/json</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>User able to delete a Program by name with invalid Method.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_able_to_delete_a_program_name_with_invalid_method_with_valid(java.lang.String)">
+                <span>Given User able to delete a Program Name with invalid method with valid "Jan23-APIAspirants-SDET-12".</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_a_invalid_request_to_delete_a_program_name()">
+                <span>When User sends a invalid request to delete a Program Name.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.verify_response_with_status_code(java.lang.String)">
+                <span>Then Verify response with status code '405 Method Not Allowed'</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log pass-bg mr-2">Pass</span>User ableto delete a Program Name with invalid endpoint.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_the_request_to_to_delete_a_program_name_with_invalid_end_point_and_with_valid(java.lang.String)">
+                <span>Given User sends the request to to delete a Program Name with invalid end point and with valid "Jan23-APIAspirants-SDET-12"..</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_a_request_with_invalid_end_point()">
+                <span>When User sends a request with invalid end point.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_checks_response_if_status_code_is_bad_request()">
+                <span>Then User checks response if status code is bad request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="48"><span class="badge log pass-bg mr-2">Pass</span>User able to delete a Program Namewith invalid base URL.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_invalid_base_url_to_delete_a_program_name()">
+                <span>Given User sends invalid base url to delete a Program Name.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_invalid_base_url_with_valid_end_point()">
+                <span>When User sends invalid base url with valid end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.status_code_should_be_service_error()">
+                <span>Then status code should be Service error</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Validate if user is able to delete with invalid Program Name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_the_request_with_invalid(java.lang.String)">
+                <span>Given User sends the request with invalid "PostgreSQL991".</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.user_sends_valid_request_with_invalid_program_name_and_its_endpoint()">
+                <span>When User sends valid request with invalid Program Name and its endpoint</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deletebatchbyprogname.verify_response_with_bad_request()">
+                <span>Then Verify response with bad request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>User able to delete a Program by ID1 with valid request.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_base_url_to_delete_a(java.lang.Integer)">
+                <span>Given User sends base url to delete a <13843>.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_request_to_delete_with_existing_program_id()">
+                <span>When User sends request to delete with existing Program_ID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.status_code_is_the_success()">
+                <span>Then status code is the success</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.status_line_should_be_http(java.lang.Double,java.lang.Integer)">
+                <span>And status line should be HTTP/1.1 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>User able to delete a Program by ID with invalid request.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_a_base_url_to_delete(java.lang.Integer)">
+                <span>Given User sends a base URL to delete <8113>.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_a_request_with_invalid_method()">
+                <span>When User sends a request with invalid method.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.verify_response_with_status_code_method_not_allowed(java.lang.Integer)">
+                <span>Then Verify response with status code ' 405 Method Not Allowed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>User ableto delete a Program by ID with invalid endpoint.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_base_url_to_delete_invalid_endpoint_with_valid(java.lang.Integer)">
+                <span>Given User sends base URL to delete invalid endpoint with valid <8113>.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_the_request_with_invalid_end_point_to_to_delete_invalid_end_point()">
+                <span>When User sends the request with invalid end point to to delete invalid end point.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.verify_response_with_status_code_not_found()">
+                <span>Then Verify response with status code Not found.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="69"><span class="badge log pass-bg mr-2">Pass</span>User able to delete a Program by ID with invalid base URL.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_invalid_base_url()">
+                <span>Given User sends invalid base url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_invalid_base_url_along_with_valid_endpoint()">
+                <span>When User sends invalid base url along with valid endpoint</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.verify_response_with_status_code_service_unavailable()">
+                <span>Then Verify response with status code Service unavailable.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Validate if user is able to delete with invalid Program ID</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_the_request_with_invalid(java.lang.Integer)">
+                <span>Given User sends the request with invalid <8113></span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.user_sends_valid_request_with_invalid_program_id_and_its_endpoint()">
+                <span>When User sends valid request with invalid Program ID and its endpoint</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Deleteprogbyid.verify_response_should_be_bad_request()">
+                <span>Then Verify response should be Bad Request</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="77"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test the Batch using GET</p>
+            <p class="text-sm">
+              <span>5:06:20 PM</span> / <span>00:00:00:159</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test the Batch using GET</h5>
+<span class='badge badge-success'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-default'>00:00:00:159</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=77</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="78"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all batches when sending valid request</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="79"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all batches when sending valid request</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends request with valid endpoint to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with success status code for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain details of the batch from "8" "API" for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 200 for all batches</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all batches when sending invalid request</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="87"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all batches when sending invalid request</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends PUT, PATCH, DELETE requests with valid endpoint for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with Method Not Allowed status code for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain error message from "9" "API" for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 405 for all batches with invalid request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends POST request with valid endpoint for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The response body should contain unsupp error message from "9" "API" for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User should receive response with Method Unsupported Media Type status code for all the batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 415 for all the batches with invalid request</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="98"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all batches when sending invalid request</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends PUT, PATCH, DELETE requests with valid endpoint for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with Method Not Allowed status code for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain error message from "10" "API" for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 405 for all batches with invalid request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends POST request with valid endpoint for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The response body should contain unsupp error message from "10" "API" for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User should receive response with Method Unsupported Media Type status code for all the batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 415 for all the batches with invalid request</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="109"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all batches when sending invalid endpoint</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="110"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all batches when sending invalid endpoint</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends request with invalid endpoint for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with Not found status code for all batches</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain error message from "11" "API" for all batches with invalid endpoint</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 404 for all batches with invalid endpoint</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="117"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test the Program using GET</p>
+            <p class="text-sm">
+              <span>5:06:20 PM</span> / <span>00:00:00:087</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test the Program using GET</h5>
+<span class='badge badge-success'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-default'>00:00:00:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=117</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="118"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all Programs when sending valid request</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all Programs when sending valid request</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends request with valid endpoint to get all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with success status code for all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain details of the Program validated from "12" "API"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 200 for all Programs with valid request</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="126"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all Programs when sending invalid request</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all Programs when sending invalid request</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends POST, PUT, PATCH, DELETE requests with valid endpoint for all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with Method Not Allowed status code for all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain error message from "9" "API" for all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 405 for all Programs with invalid request</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="134"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all Programs when sending invalid endpoint</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all Programs when sending invalid endpoint</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends request with invalid endpoint for all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with Not found status code for all Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain error message from "11" "API" for all the Programs</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 404 for all Programs</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="142"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To test the Batch  by program  ID using Get Method.</p>
+            <p class="text-sm">
+              <span>5:06:20 PM</span> / <span>00:00:00:065</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">To test the Batch by program ID using Get Method.</h5>
+<span class='badge badge-success'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-default'>00:00:00:065</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=142</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="143"><span class="badge log pass-bg mr-2">Pass</span>Test if user able to get a Batch by progID when sending valid request</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.user_sends_request_with_base_url_forbatch_by_progid()">
+                <span>Given User sends request with base url forbatch by progid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.the_content_type_of_response_header_should_be_application_json_to_get_for_batchprog_id()">
+                <span>Then The content type of response header should be application/json to get for batchprogID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.user_send_a_request_with_valid_endpoint_to_get_batchprog_id()">
+                <span>When User send a request with valid endpoint to get batchprogID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.user_should_receive_response_with_success_status_code_for_batchprogid()">
+                <span>Then User should receive response with success status code for Batchprogid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.validate_get_batch_by_batchprog_id_schema_in_json_format()">
+                <span>And Validate Get batch by batchprogID Schema in json format</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.the_status_line_should_be_http_200for_valid_batchprogid(java.lang.Double)">
+                <span>And The status line should beHTTP/1.1 200for valid batchprogid</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="150"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get batch Id when sending invalid request</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.user_sends_request_with_base_url_forbatch_by_progid()">
+                <span>Given User sends request with base url forbatch by progid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.the_content_type_of_response_header_should_be_application_json_to_get_for_batchprog_id()">
+                <span>Then The content type of response header should be application/json to get for batchprogID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.user_send_a_invalid_request_with_valid_endpoint_batchprogid()">
+                <span>When User send a invalid request with valid endpoint batchprogid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.verify_response_with_status_code_batchprogid(java.lang.String)">
+                <span>Then Verify response with status code 'Method Not Allowed' batchprogid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.validate_get_batch_by_batchprog_id_schema_in_json_format()">
+                <span>And Validate Get batch by batchprogID Schema in json format</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.the_status_line_should_be_http_405for_valid_batchprogid(java.lang.Double)">
+                <span>And The status line should beHTTP/1.1 405for valid batchprogid</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to getbatchbyprogID when sending invalid endpoint</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.user_sends_request_with_base_url_forbatch_by_progid()">
+                <span>Given User sends request with base url forbatch by progid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.the_content_type_of_response_header_should_be_application_json_to_get_for_batchprog_id()">
+                <span>Then The content type of response header should be application/json to get for batchprogID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.user_send_a_invalid_endpoint_with_valid_request_for_batchprog_id()">
+                <span>When User send a invalid endpoint with valid request for batchprogId</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.verify_response_with_status_code_batchprogid(java.lang.String)">
+                <span>Then Verify response with status code 'Bad Request' batchprogid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.validate_get_batch_by_batchprog_id_schema_in_json_format()">
+                <span>And Validate Get batch by batchprogID Schema in json format</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getbatchbyprogid.the_status_line_should_be_http_for_invalid_endpoint_batchprogid(java.lang.Double,java.lang.Integer)">
+                <span>And The status line should be HTTP/1.1 400 for invalid endpoint batchprogid</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="164"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test the Batch by name using GET</p>
+            <p class="text-sm">
+              <span>5:06:20 PM</span> / <span>00:00:00:094</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test the Batch by name using GET</h5>
+<span class='badge badge-success'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-default'>00:00:00:094</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=164</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="165"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get batch by name when sending valid request</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="166"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get batch by name when sending valid request</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends request with valid endpoint to get batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with success status code for batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain all the details of the requested batch from "13" "API"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 200 for batch by name</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="173"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get batch by name when sending invalid request</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="174"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get batch by name when sending invalid request</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends POST, PUT, PATCH, DELETE requests with valid endpoint for batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with Method Not Allowed status code for batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain error message Method Not Allowed for batch by name from "9" "API"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 405 for metod not allowed batch by name</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="181"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get batch by name when sending invalid endpoint</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="182"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get batch by name when sending invalid endpoint</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given The user sends base url as a part of request to get batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The content type of response header should be application/json to get batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends request with invalid endpoint for batch by name from "6" "API"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should receive response with Bad Request status code for batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The response body should contain error message ENTITY_DOES_NOT_EXIST for the batch by name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The status line should be HTTP/1.1 400 for the batch by name</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="189"><span class="badge log pass-bg mr-2">Pass</span>Test if JSON schema matches the response while sending valid request</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.GetbatchbynameSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_batch_by_name()">
+                <span>Given The user sends base url as a part of request to get batch by name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GetbatchbynameSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_batch_by_name()">
+                <span>Then The content type of response header should be application/json to get batch by name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GetbatchbynameSDbackup.the_json_schema_should_match_the_response_to_get_batch_by_name()">
+                <span>Then The JSON schema should match the response to get batch by name</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="193"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To test the program by ID using Get Method</p>
+            <p class="text-sm">
+              <span>5:06:20 PM</span> / <span>00:00:00:065</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">To test the program by ID using Get Method</h5>
+<span class='badge badge-success'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-default'>00:00:00:065</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=193</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="194"><span class="badge log pass-bg mr-2">Pass</span>User able to Get a Program by ID with valid request</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.user_sends_valid_base_url_to_get_program_by_id()">
+                <span>Given User sends valid base url to get Program by Id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.user_sends_request_with_its_endpoint_to_get_program_id()">
+                <span>When User sends request with its endpoint to get Program ID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.user_should_receive_response_with_status_code()">
+                <span>Then User should receive response with status code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.validate_response_body_to_get_program_by_id()">
+                <span>And Validate response body  to get Program by ID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.verify_status_line_should_be_success_line()">
+                <span>And Verify status line should be success line</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="200"><span class="badge log pass-bg mr-2">Pass</span>User able to Get a Program by ID with invalid request</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.user_sends_the_url_with_invalid_request()">
+                <span>Given User sends the url with invalid request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.user_sends_the_request_with_its_invalid_request()">
+                <span>When User sends the request with its invalid request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.validate_response_with_status_code_method_not_allowed()">
+                <span>Then Validate response with status code Method not allowed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.validate_response_body_with_error_message_not_allowed()">
+                <span>And Validate response body with error message not allowed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="205"><span class="badge log pass-bg mr-2">Pass</span>User able to Get a Program by ID with invalid endpoint</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.user_sends_the_request_to_get_program_id()">
+                <span>Given User sends the request to get Program ID</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.user_sends_a_request_body_with_invalid_endpoint()">
+                <span>When User sends a request body with invalid endpoint</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.verify_response_with_status_code_bad_request()">
+                <span>Then Verify response with status code Bad Request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Getprogrambyid.validate_the_response_body_with_error_code_message(java.lang.String)">
+                <span>And Validate the response body with error code message 'ENTITY_DOES_NOT_EXIST'</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="210"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Batch and Program with invalid uri</p>
+            <p class="text-sm">
+              <span>5:06:20 PM</span> / <span>00:00:00:054</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Batch and Program with invalid uri</h5>
+<span class='badge badge-success'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-danger'>01.21.2023 5:06:20 PM</span>
+<span class='badge badge-default'>00:00:00:054</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=210</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="211"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all programs when sending invalid base url</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_user_sends_invalid_base_url()">
+                <span>Given The user sends invalid base url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.user_sends_request_with_valid_endpoint_for_getting_all_the_programs()">
+                <span>When User sends request with valid endpoint for getting all the programs</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.user_should_receive_response_with_service_unavailable_status_code()">
+                <span>Then User should receive response with service unavailable status code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_response_body_should_contain_application_error_message_for_all_programs()">
+                <span>And The response body should contain application error message for all programs</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_content_type_of_response_header_should_be_text_html_for_all_programs()">
+                <span>And The content type of response header should be text/html for all programs</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="217"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get all batches when sending invalid base url</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_user_sends_invalid_base_url()">
+                <span>Given The user sends invalid base url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.user_sends_request_with_valid_endpoint_for_getting_all_the_batches()">
+                <span>When User sends request with valid endpoint for getting all the batches</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.user_should_receive_response_with_service_unavailable_status_code()">
+                <span>Then User should receive response with service unavailable status code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_response_body_should_contain_application_error_message_for_all_batches()">
+                <span>And The response body should contain application error message for all batches</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_content_type_of_response_header_should_be_text_html_for_all_batches()">
+                <span>And The content type of response header should be text/html for all batches</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="223"><span class="badge log pass-bg mr-2">Pass</span>Test if user is able to get the batch by batch name when sending invalid base url</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_user_sends_invalid_base_url()">
+                <span>Given The user sends invalid base url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.user_sends_request_with_valid_endpoint_for_getting_the_requested_batch_detail()">
+                <span>When User sends request with valid endpoint for getting the requested batch detail</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.user_should_receive_response_with_service_unavailable_status_code()">
+                <span>Then User should receive response with service unavailable status code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_response_body_should_contain_application_error_message_for_getting_batch_by_name()">
+                <span>And The response body should contain application error message for getting batch by name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.InvaliduriSD.the_content_type_of_response_header_should_be_text_html_for_getting_batch_by_name()">
+                <span>And The content type of response header should be text/html for getting batch by name</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">20</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tag</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tag</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User able to create Program</a>
+<div class="">
+<span class="badge badge-default">Validate Post Request to Create Program.User able to create Program</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@getallbatches</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@getallbatches</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='78'>Test if user is able to get all batches when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='79'>Test if user is able to get all batches when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='86'>Test if user is able to get all batches when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='87'>Test if user is able to get all batches when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='98'>Test if user is able to get all batches when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='109'>Test if user is able to get all batches when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='110'>Test if user is able to get all batches when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='210' id='217'>Test if user is able to get all batches when sending invalid base url</a>
+<div class="">
+<span class="badge badge-default">Test Batch and Program with invalid uri.Test if user is able to get all batches when sending invalid base url</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@testcase3programs</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@testcase3programs</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='134'>Test if user is able to get all Programs when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='135'>Test if user is able to get all Programs when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@getprogbyid</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@getprogbyid</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='193' id='194'>User able to Get a Program by ID with valid request</a>
+<div class="">
+<span class="badge badge-default">To test the program by ID using Get Method.User able to Get a Program by ID with valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='193' id='200'>User able to Get a Program by ID with invalid request</a>
+<div class="">
+<span class="badge badge-default">To test the program by ID using Get Method.User able to Get a Program by ID with invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='193' id='205'>User able to Get a Program by ID with invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">To test the program by ID using Get Method.User able to Get a Program by ID with invalid endpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@getallprograms</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@getallprograms</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='210' id='211'>Test if user is able to get all programs when sending invalid base url</a>
+<div class="">
+<span class="badge badge-default">Test Batch and Program with invalid uri.Test if user is able to get all programs when sending invalid base url</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@test1getallbatches</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test1getallbatches</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='78'>Test if user is able to get all batches when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='79'>Test if user is able to get all batches when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending valid request</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@getbatchbyname</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@getbatchbyname</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='165'>Test if user is able to get batch by name when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='166'>Test if user is able to get batch by name when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='173'>Test if user is able to get batch by name when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='174'>Test if user is able to get batch by name when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='181'>Test if user is able to get batch by name when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='182'>Test if user is able to get batch by name when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='189'>Test if JSON schema matches the response while sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if JSON schema matches the response while sending valid request</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@test4getbatchbyname</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test4getbatchbyname</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='189'>Test if JSON schema matches the response while sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if JSON schema matches the response while sending valid request</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@test2getbatchbyname</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test2getbatchbyname</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='173'>Test if user is able to get batch by name when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='174'>Test if user is able to get batch by name when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending invalid request</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@getallbatchbyname</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@getallbatchbyname</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='210' id='223'>Test if user is able to get the batch by batch name when sending invalid base url</a>
+<div class="">
+<span class="badge badge-default">Test Batch and Program with invalid uri.Test if user is able to get the batch by batch name when sending invalid base url</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@test3getallbatches</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test3getallbatches</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='109'>Test if user is able to get all batches when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='110'>Test if user is able to get all batches when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@testcase1programs</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@testcase1programs</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='118'>Test if user is able to get all Programs when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='119'>Test if user is able to get all Programs when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending valid request</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@Invaliduri</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Invaliduri</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='210' id='211'>Test if user is able to get all programs when sending invalid base url</a>
+<div class="">
+<span class="badge badge-default">Test Batch and Program with invalid uri.Test if user is able to get all programs when sending invalid base url</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='210' id='217'>Test if user is able to get all batches when sending invalid base url</a>
+<div class="">
+<span class="badge badge-default">Test Batch and Program with invalid uri.Test if user is able to get all batches when sending invalid base url</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='210' id='223'>Test if user is able to get the batch by batch name when sending invalid base url</a>
+<div class="">
+<span class="badge badge-default">Test Batch and Program with invalid uri.Test if user is able to get the batch by batch name when sending invalid base url</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@test1getbatchbyname</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test1getbatchbyname</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='165'>Test if user is able to get batch by name when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='166'>Test if user is able to get batch by name when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending valid request</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@test3getbatchbyname</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test3getbatchbyname</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='181'>Test if user is able to get batch by name when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='164' id='182'>Test if user is able to get batch by name when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Batch by name using GET.Test if user is able to get batch by name when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@Getallprograms</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Getallprograms</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='118'>Test if user is able to get all Programs when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='119'>Test if user is able to get all Programs when sending valid request</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='126'>Test if user is able to get all Programs when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='127'>Test if user is able to get all Programs when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='134'>Test if user is able to get all Programs when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='135'>Test if user is able to get all Programs when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tag1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tag1</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User able to create Program</a>
+<div class="">
+<span class="badge badge-default">Validate Post Request to Create Program.User able to create Program</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@test2getallbatches</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test2getallbatches</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='86'>Test if user is able to get all batches when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='87'>Test if user is able to get all batches when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='77' id='98'>Test if user is able to get all batches when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Batch using GET.Test if user is able to get all batches when sending invalid request</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@testcase2programs</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@testcase2programs</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='126'>Test if user is able to get all Programs when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='117' id='127'>Test if user is able to get all Programs when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">Test the Program using GET.Test if user is able to get all Programs when sending invalid request</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@getbatchbyprogID</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@getbatchbyprogID</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='142' id='143'>Test if user able to get a Batch by progID when sending valid request</a>
+<div class="">
+<span class="badge badge-default">To test the Batch by program ID using Get Method..Test if user able to get a Batch by progID when sending valid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='142' id='150'>Test if user is able to get batch Id when sending invalid request</a>
+<div class="">
+<span class="badge badge-default">To test the Batch by program ID using Get Method..Test if user is able to get batch Id when sending invalid request</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:06:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='142' id='157'>Test if user is able to getbatchbyprogID when sending invalid endpoint</a>
+<div class="">
+<span class="badge badge-default">To test the Batch by program ID using Get Method..Test if user is able to getbatchbyprogID when sending invalid endpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

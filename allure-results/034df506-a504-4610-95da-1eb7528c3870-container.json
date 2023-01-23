@@ -1,0 +1,1 @@
+{"uuid":"034df506-a504-4610-95da-1eb7528c3870","name":"Scenario: User able to delete a Batch by ID with invalid request.","children":["91ed53e4-662e-4ed1-be04-b6ea3c7b2b5e"],"befores":[],"afters":[],"start":1674342420814,"stop":1674342420826}

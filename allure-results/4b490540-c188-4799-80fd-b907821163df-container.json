@@ -1,0 +1,1 @@
+{"uuid":"4b490540-c188-4799-80fd-b907821163df","name":"Scenario: User able to delete a Batch by ID with invalid endpoint.","children":["79ea511a-ca17-49b0-a296-4fd4fb970822"],"befores":[],"afters":[],"start":1674341532571,"stop":1674341532582}

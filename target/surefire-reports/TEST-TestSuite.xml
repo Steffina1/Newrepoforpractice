@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="13.407" tests="36" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\amitf\eclipse-workspace\Newrepoforpractice\target\test-classes;C:\Users\amitf\eclipse-workspace\Newrepoforpractice\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.0\jackson-databind-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.0\jackson-annotations-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.0\jackson-core-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-junit\7.11.0\cucumber-junit-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-java\7.11.0\cucumber-java-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-core\7.11.0\cucumber-core-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin\7.11.0\cucumber-gherkin-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.0\cucumber-gherkin-messages-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-expressions\16.1.1\cucumber-expressions-16.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\datatable\7.11.0\datatable-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-plugin\7.11.0\cucumber-plugin-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\docstring\7.11.0\docstring-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-picocontainer\7.11.0\cucumber-picocontainer-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-testng\7.11.0\cucumber-testng-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.19.0\allure-cucumber7-jvm-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-java-commons\2.19.0\allure-java-commons-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-model\2.19.0\allure-model-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-testng\2.20.1\allure-testng-2.20.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-test-filter\2.20.1\allure-test-filter-2.20.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.2\log4j-core-2.17.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-library\2.2\hamcrest-library-2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.5.1\extentreports-cucumber7-adapter-1.5.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\extent-pdf-report\2.5.1\extent-pdf-report-2.5.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.8.1\cucumber-pdf-report-2.8.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.4.1\rest-assured-cucumber-pdf-report-1.4.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\jsoup\jsoup\1.14.3\jsoup-1.14.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.1\htmlextentreporter-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
+    <property name="sun.java.command" value="C:\Windows\Temp\surefire11424542393945620890\surefirebooter-20230123115455870_3.jar C:\Windows\Temp\surefire11424542393945620890 2023-01-23T11-54-55_315-jvmRun1 surefire-20230123115455870_1tmp surefire_0-20230123115455870_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\amitf\eclipse-workspace\Newrepoforpractice\target\test-classes;C:\Users\amitf\eclipse-workspace\Newrepoforpractice\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.0\jackson-databind-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.0\jackson-annotations-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.0\jackson-core-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-junit\7.11.0\cucumber-junit-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-java\7.11.0\cucumber-java-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-core\7.11.0\cucumber-core-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin\7.11.0\cucumber-gherkin-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.0\cucumber-gherkin-messages-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-expressions\16.1.1\cucumber-expressions-16.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\datatable\7.11.0\datatable-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-plugin\7.11.0\cucumber-plugin-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\docstring\7.11.0\docstring-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-picocontainer\7.11.0\cucumber-picocontainer-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-testng\7.11.0\cucumber-testng-7.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-html\0.2.7\cucumber-html-0.2.7.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.19.0\allure-cucumber7-jvm-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-java-commons\2.19.0\allure-java-commons-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-model\2.19.0\allure-model-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-testng\2.20.1\allure-testng-2.20.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-test-filter\2.20.1\allure-test-filter-2.20.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.2\log4j-core-2.17.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-library\2.2\hamcrest-library-2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.5.1\extentreports-cucumber7-adapter-1.5.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\extent-pdf-report\2.5.1\extent-pdf-report-2.5.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.8.1\cucumber-pdf-report-2.8.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.4.1\rest-assured-cucumber-pdf-report-1.4.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\jsoup\jsoup\1.14.3\jsoup-1.14.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.1\htmlextentreporter-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\WINDOWS\system32\config\systemprofile"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.4.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\amitf\eclipse-workspace\Newrepoforpractice"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire11424542393945620890\surefirebooter-20230123115455870_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="user.name" value="DESKTOP-JSLH211$"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\WINDOWS\system32\config\systemprofile\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\WINDOWS\TEMP\"/>
+    <property name="java.version" value="17.0.4.1"/>
+    <property name="user.dir" value="C:\Users\amitf\eclipse-workspace\Newrepoforpractice"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\apache-maven-3.8.5/bin;C:\Program Files\Java\jdk-17.0.4.1/bin;C:\Program Files\Java\jdk-17.0.4.1/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-19\bin;C:\allure-2.13.0\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-17.0.4.1\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;User able to create Program&quot;, &quot;Validate Post Request to Create Program&quot;](1)" classname="testrunner.Testrunhtml" time="0.567">
+    <system-out><![CDATA[
+@tag @tag1
+Scenario: User able to create Program                                                                                                        # src/test/resources/features/Createprogram.feature:5
+  Given User sends request with the endpoint to create program                                                                               # stepdefinitions.Createprogram.user_sends_request_with_the_endpoint_to_create_program()
+  When User sends a request body with valid endpoint to create Program.                                                                      # stepdefinitions.Createprogram.user_sends_a_request_body_with_valid_endpoint_to_create_program()
+  Then Validate response status <201>.                                                                                                       # stepdefinitions.Createprogram.validate_response_status(java.lang.Integer)
+  And Validate response body for programName,programDescription,programStatus                                                                # stepdefinitions.Createprogram.validate_response_body_for_program_name_program_description_program_status()
+  And Validate response headers should be application json format                                                                            # stepdefinitions.Createprogram.validate_response_headers_should_be_application_json_format()
+  And Verify response body schema './src/test/resources/configuration/JsonSchema_Program/postRequest/Post_ValidRequest.json' in json format. # stepdefinitions.Createprogram.verify_response_body_schema_in_json_format(java.lang.String)
+  And Verify the values are present in DB                                                                                                    # stepdefinitions.Createprogram.verify_the_values_are_present_in_db()
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete the Batch by ID with valid request.&quot;, &quot;To test the batch using DELETE&quot;](2)" classname="testrunner.Testrunhtml" time="0.089">
+    <system-out><![CDATA[
+Scenario: User able to delete the Batch by ID with valid request. # src/test/resources/features/DeletebatchbyId.feature:3
+  Given User sends the base url to delete <3518>.                 # stepdefinitions.DeletebatchbyId.user_sends_the_base_url_to_delete(java.lang.Integer)
+  When User sends request to delete with existing batch ID.       # stepdefinitions.DeletebatchbyId.user_sends_request_to_delete_with_existing_batch_id()
+  Then status code should be '200 ok'.                            # stepdefinitions.DeletebatchbyId.status_code_should_be(java.lang.String)
+  And Verify content type header should be application/json.      # stepdefinitions.DeletebatchbyId.verify_content_type_header_should_be_application_json()
+  And Verify if status line is 'HTTP/1.1 200'.                    # stepdefinitions.DeletebatchbyId.verify_if_status_line_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete a Batch by ID with invalid endpoint.&quot;, &quot;To test the batch using DELETE&quot;](3)" classname="testrunner.Testrunhtml" time="0.066">
+    <system-out><![CDATA[
+Scenario: User able to delete a Batch by ID with invalid endpoint. # src/test/resources/features/DeletebatchbyId.feature:10
+  Given User sends a invalid request to delete a  <3530>.          # stepdefinitions.DeletebatchbyId.user_sends_a_invalid_request_to_delete_a(java.lang.Integer)
+  When User sends a request body with invalid endpoint.            # stepdefinitions.DeletebatchbyId.user_sends_a_request_body_with_invalid_endpoint()
+  Then Verify status code is ' 404 Not Found'.                     # stepdefinitions.DeletebatchbyId.verify_status_code_is(java.lang.String)
+  And Verify content type header 'application/json'.               # stepdefinitions.DeletebatchbyId.verify_content_type_header(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User ableto delete a Batch by ID with invalid batchID.&quot;, &quot;To test the batch using DELETE&quot;](4)" classname="testrunner.Testrunhtml" time="0.053">
+    <system-out><![CDATA[
+Scenario: User ableto delete a Batch by ID with invalid batchID.       # src/test/resources/features/DeletebatchbyId.feature:16
+  Given User send base URL to delete batch with invalid <3530>.        # stepdefinitions.DeletebatchbyId.user_send_base_url_to_delete_batch_with_invalid(java.lang.Integer)
+  When User send valid request with invalid Batch ID and its endpoint. # stepdefinitions.DeletebatchbyId.user_send_valid_request_with_invalid_batch_id_and_its_endpoint()
+  Then the  status code should be bad request                          # stepdefinitions.DeletebatchbyId.the_status_code_should_be_bad_request()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete a Batch by ID with invalid base URL.&quot;, &quot;To test the batch using DELETE&quot;](5)" classname="testrunner.Testrunhtml" time="0.052">
+    <system-out><![CDATA[
+Scenario: User able to delete a Batch by ID with invalid base URL. # src/test/resources/features/DeletebatchbyId.feature:22
+  Given User sends invalid base url to delete a Batch ID.          # stepdefinitions.DeletebatchbyId.user_sends_invalid_base_url_to_delete_a_batch_id()
+  When User sends invalid base url with valid endpoint.            # stepdefinitions.DeletebatchbyId.user_sends_invalid_base_url_with_valid_endpoint()
+  Then Verify  status code '503 Service unavailable'.              # stepdefinitions.DeletebatchbyId.verify_status_code(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete a Batch by ID with invalid request.&quot;, &quot;To test the batch using DELETE&quot;](6)" classname="testrunner.Testrunhtml" time="0.039">
+    <system-out><![CDATA[
+Scenario: User able to delete a Batch by ID with invalid request.   # src/test/resources/features/DeletebatchbyId.feature:27
+  Given User sends a base URL with batch ID to delete <3530>.       # stepdefinitions.DeletebatchbyId.user_sends_a_base_url_with_batch_id_to_delete(java.lang.Integer)
+  When User sends a request with invalid method to delete batch ID. # stepdefinitions.DeletebatchbyId.user_sends_a_request_with_invalid_method_to_delete_batch_id()
+  Then Verify if the response  status code is method not allowed    # stepdefinitions.DeletebatchbyId.verify_if_the_response_status_code_is_method_not_allowed()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To test the program using DELETE&quot;, &quot;To test the program using DELETE&quot;](7)" classname="testrunner.Testrunhtml" time="0.051">
+    <system-out><![CDATA[
+Scenario: To test the program using DELETE                # src/test/resources/features/Deletebatchbyprogname.feature:5
+  Given User sends base URL to delete "LMS practic test". # stepdefinitions.Deletebatchbyprogname.user_sends_base_url_to_delete(java.lang.String)
+  When User sends request with valid program name.        # stepdefinitions.Deletebatchbyprogname.user_sends_request_with_valid_program_name()
+  Then User status code success.                          # stepdefinitions.Deletebatchbyprogname.user_status_code_success()
+  And content type header should be application/json      # stepdefinitions.Deletebatchbyprogname.content_type_header_should_be_application_json()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete a Program by name with invalid Method.&quot;, &quot;To test the program using DELETE&quot;](8)" classname="testrunner.Testrunhtml" time="0.036">
+    <system-out><![CDATA[
+Scenario: User able to delete a Program by name with invalid Method.                                    # src/test/resources/features/Deletebatchbyprogname.feature:11
+  Given User able to delete a Program Name with invalid method with valid "Jan23-APIAspirants-SDET-12". # stepdefinitions.Deletebatchbyprogname.user_able_to_delete_a_program_name_with_invalid_method_with_valid(java.lang.String)
+  When User sends a invalid request to delete a Program Name.                                           # stepdefinitions.Deletebatchbyprogname.user_sends_a_invalid_request_to_delete_a_program_name()
+  Then Verify response with status code '405 Method Not Allowed'                                        # stepdefinitions.Deletebatchbyprogname.verify_response_with_status_code(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User ableto delete a Program Name with invalid endpoint.&quot;, &quot;To test the program using DELETE&quot;](9)" classname="testrunner.Testrunhtml" time="0.038">
+    <system-out><![CDATA[
+Scenario: User ableto delete a Program Name with invalid endpoint.                                                              # src/test/resources/features/Deletebatchbyprogname.feature:16
+  Given User sends the request to to delete a Program Name with invalid end point and with valid "Jan23-APIAspirants-SDET-12".. # stepdefinitions.Deletebatchbyprogname.user_sends_the_request_to_to_delete_a_program_name_with_invalid_end_point_and_with_valid(java.lang.String)
+  When User sends a request with invalid end point.                                                                             # stepdefinitions.Deletebatchbyprogname.user_sends_a_request_with_invalid_end_point()
+  Then User checks response if status code is bad request                                                                       # stepdefinitions.Deletebatchbyprogname.user_checks_response_if_status_code_is_bad_request()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete a Program Namewith invalid base URL.&quot;, &quot;To test the program using DELETE&quot;](10)" classname="testrunner.Testrunhtml" time="0.03">
+    <system-out><![CDATA[
+Scenario: User able to delete a Program Namewith invalid base URL. # src/test/resources/features/Deletebatchbyprogname.feature:21
+  Given User sends invalid base url to delete a Program Name.      # stepdefinitions.Deletebatchbyprogname.user_sends_invalid_base_url_to_delete_a_program_name()
+  When User sends invalid base url with valid end point            # stepdefinitions.Deletebatchbyprogname.user_sends_invalid_base_url_with_valid_end_point()
+  Then status code should be Service error                         # stepdefinitions.Deletebatchbyprogname.status_code_should_be_service_error()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate if user is able to delete with invalid Program Name&quot;, &quot;To test the program using DELETE&quot;](11)" classname="testrunner.Testrunhtml" time="0.042">
+    <system-out><![CDATA[
+Scenario: Validate if user is able to delete with invalid Program Name     # src/test/resources/features/Deletebatchbyprogname.feature:26
+  Given User sends the request with invalid "PostgreSQL991".               # stepdefinitions.Deletebatchbyprogname.user_sends_the_request_with_invalid(java.lang.String)
+  When User sends valid request with invalid Program Name and its endpoint # stepdefinitions.Deletebatchbyprogname.user_sends_valid_request_with_invalid_program_name_and_its_endpoint()
+  Then Verify response with bad request                                    # stepdefinitions.Deletebatchbyprogname.verify_response_with_bad_request()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete a Program by ID1 with valid request.&quot;, &quot;To test the program using DELETE&quot;](12)" classname="testrunner.Testrunhtml" time="0.039">
+    <system-out><![CDATA[
+Scenario: User able to delete a Program by ID1 with valid request. # src/test/resources/features/Deleteprogbyid.feature:3
+  Given User sends base url to delete a <13843>.                   # stepdefinitions.Deleteprogbyid.user_sends_base_url_to_delete_a(java.lang.Integer)
+  When User sends request to delete with existing Program_ID       # stepdefinitions.Deleteprogbyid.user_sends_request_to_delete_with_existing_program_id()
+  Then status code is the success                                  # stepdefinitions.Deleteprogbyid.status_code_is_the_success()
+  And status line should be HTTP/1.1 200                           # stepdefinitions.Deleteprogbyid.status_line_should_be_http(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete a Program by ID with invalid request.&quot;, &quot;To test the program using DELETE&quot;](13)" classname="testrunner.Testrunhtml" time="0.024">
+    <system-out><![CDATA[
+Scenario: User able to delete a Program by ID with invalid request. # src/test/resources/features/Deleteprogbyid.feature:9
+  Given User sends a base URL to delete <8113>.                     # stepdefinitions.Deleteprogbyid.user_sends_a_base_url_to_delete(java.lang.Integer)
+  When User sends a request with invalid method.                    # stepdefinitions.Deleteprogbyid.user_sends_a_request_with_invalid_method()
+  Then Verify response with status code ' 405 Method Not Allowed    # stepdefinitions.Deleteprogbyid.verify_response_with_status_code_method_not_allowed(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User ableto delete a Program by ID with invalid endpoint.&quot;, &quot;To test the program using DELETE&quot;](14)" classname="testrunner.Testrunhtml" time="0.053">
+    <system-out><![CDATA[
+Scenario: User ableto delete a Program by ID with invalid endpoint.                  # src/test/resources/features/Deleteprogbyid.feature:14
+  Given User sends base URL to delete invalid endpoint with valid <8113>.            # stepdefinitions.Deleteprogbyid.user_sends_base_url_to_delete_invalid_endpoint_with_valid(java.lang.Integer)
+  When User sends the request with invalid end point to to delete invalid end point. # stepdefinitions.Deleteprogbyid.user_sends_the_request_with_invalid_end_point_to_to_delete_invalid_end_point()
+  Then Verify response with status code Not found.                                   # stepdefinitions.Deleteprogbyid.verify_response_with_status_code_not_found()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to delete a Program by ID with invalid base URL.&quot;, &quot;To test the program using DELETE&quot;](15)" classname="testrunner.Testrunhtml" time="0.028">
+    <system-out><![CDATA[
+Scenario: User able to delete a Program by ID with invalid base URL. # src/test/resources/features/Deleteprogbyid.feature:19
+  Given User sends invalid base url                                  # stepdefinitions.Deleteprogbyid.user_sends_invalid_base_url()
+  When User sends invalid base url along with valid endpoint         # stepdefinitions.Deleteprogbyid.user_sends_invalid_base_url_along_with_valid_endpoint()
+  Then Verify response with status code Service unavailable.         # stepdefinitions.Deleteprogbyid.verify_response_with_status_code_service_unavailable()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate if user is able to delete with invalid Program ID&quot;, &quot;To test the program using DELETE&quot;](16)" classname="testrunner.Testrunhtml" time="0.077">
+    <system-out><![CDATA[
+Scenario: Validate if user is able to delete with invalid Program ID     # src/test/resources/features/Deleteprogbyid.feature:24
+  Given User sends the request with invalid <8113>                       # stepdefinitions.Deleteprogbyid.user_sends_the_request_with_invalid(java.lang.Integer)
+  When User sends valid request with invalid Program ID and its endpoint # stepdefinitions.Deleteprogbyid.user_sends_valid_request_with_invalid_program_id_and_its_endpoint()
+  Then Verify response should be Bad Request                             # stepdefinitions.Deleteprogbyid.verify_response_should_be_bad_request()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all batches when sending valid request&quot;, &quot;Test the Batch using GET&quot;](17)" classname="testrunner.Testrunhtml" time="0.148">
+    <system-out><![CDATA[
+@getallbatches @test1getallbatches
+Scenario Outline: Test if user is able to get all batches when sending valid request       # src/test/resources/features/Getallbatchesbackup.feature:16
+  Given The user sends base url as a part of request to get all batches                    # stepdefinitions.GetallbatchesSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_all_batches()
+  Then The content type of response header should be application/json to get all batches   # stepdefinitions.GetallbatchesSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_all_batches()
+  When User sends request with valid endpoint to get all batches                           # stepdefinitions.GetallbatchesSDbackup.user_sends_request_with_valid_endpoint_to_get_all_batches()
+  Then User should receive response with success status code for all batches               # stepdefinitions.GetallbatchesSDbackup.user_should_receive_response_with_success_status_code_for_all_batches()
+  And The response body should contain details of the batch from "8" "API" for all batches # stepdefinitions.GetallbatchesSDbackup.the_response_body_should_contain_details_of_the_batch_from_for_all_batches(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 200 for all batches                               # stepdefinitions.GetallbatchesSDbackup.the_status_line_should_be_http_for_all_batches(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all batches when sending invalid request&quot;, &quot;Test the Batch using GET&quot;](18)" classname="testrunner.Testrunhtml" time="0.067">
+    <system-out><![CDATA[
+@getallbatches @test2getallbatches
+Scenario Outline: Test if user is able to get all batches when sending invalid request                # src/test/resources/features/Getallbatchesbackup.feature:31
+  Given The user sends base url as a part of request to get all batches                               # stepdefinitions.GetallbatchesSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_all_batches()
+  Then The content type of response header should be application/json to get all batches              # stepdefinitions.GetallbatchesSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_all_batches()
+  When User sends PUT, PATCH, DELETE requests with valid endpoint for all batches                     # stepdefinitions.GetallbatchesSDbackup.user_sends_put_patch_delete_requests_with_valid_endpoint_for_all_batches()
+  Then User should receive response with Method Not Allowed status code for all batches               # stepdefinitions.GetallbatchesSDbackup.user_should_receive_response_with_method_not_allowed_status_code_for_all_batches()
+  And The response body should contain error message from "9" "API" for all batches                   # stepdefinitions.GetallbatchesSDbackup.the_response_body_should_contain_error_message_from_for_all_batches(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 405 for all batches with invalid request                     # stepdefinitions.GetallbatchesSDbackup.the_status_line_should_be_http_for_all_batches_with_invalid_request(java.lang.Double,java.lang.Integer)
+  When User sends POST request with valid endpoint for all batches                                    # stepdefinitions.GetallbatchesSDbackup.user_sends_post_request_with_valid_endpoint_for_all_batches()
+  Then The response body should contain unsupp error message from "9" "API" for all batches           # stepdefinitions.GetallbatchesSDbackup.the_response_body_should_contain_unsupp_error_message_from_for_all_batches(java.lang.String,java.lang.String)
+  And User should receive response with Method Unsupported Media Type status code for all the batches # stepdefinitions.GetallbatchesSDbackup.user_should_receive_response_with_method_unsupported_media_type_status_code_for_all_the_batches()
+  And The status line should be HTTP/1.1 415 for all the batches with invalid request                 # stepdefinitions.GetallbatchesSDbackup.the_status_line_should_be_http_for_all_the_batches_with_invalid_request(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all batches when sending invalid request&quot;, &quot;Test the Batch using GET&quot;](19)" classname="testrunner.Testrunhtml" time="0.051">
+    <system-out><![CDATA[
+@getallbatches @test2getallbatches
+Scenario Outline: Test if user is able to get all batches when sending invalid request                # src/test/resources/features/Getallbatchesbackup.feature:32
+  Given The user sends base url as a part of request to get all batches                               # stepdefinitions.GetallbatchesSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_all_batches()
+  Then The content type of response header should be application/json to get all batches              # stepdefinitions.GetallbatchesSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_all_batches()
+  When User sends PUT, PATCH, DELETE requests with valid endpoint for all batches                     # stepdefinitions.GetallbatchesSDbackup.user_sends_put_patch_delete_requests_with_valid_endpoint_for_all_batches()
+  Then User should receive response with Method Not Allowed status code for all batches               # stepdefinitions.GetallbatchesSDbackup.user_should_receive_response_with_method_not_allowed_status_code_for_all_batches()
+  And The response body should contain error message from "10" "API" for all batches                  # stepdefinitions.GetallbatchesSDbackup.the_response_body_should_contain_error_message_from_for_all_batches(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 405 for all batches with invalid request                     # stepdefinitions.GetallbatchesSDbackup.the_status_line_should_be_http_for_all_batches_with_invalid_request(java.lang.Double,java.lang.Integer)
+  When User sends POST request with valid endpoint for all batches                                    # stepdefinitions.GetallbatchesSDbackup.user_sends_post_request_with_valid_endpoint_for_all_batches()
+  Then The response body should contain unsupp error message from "10" "API" for all batches          # stepdefinitions.GetallbatchesSDbackup.the_response_body_should_contain_unsupp_error_message_from_for_all_batches(java.lang.String,java.lang.String)
+  And User should receive response with Method Unsupported Media Type status code for all the batches # stepdefinitions.GetallbatchesSDbackup.user_should_receive_response_with_method_unsupported_media_type_status_code_for_all_the_batches()
+  And The status line should be HTTP/1.1 415 for all the batches with invalid request                 # stepdefinitions.GetallbatchesSDbackup.the_status_line_should_be_http_for_all_the_batches_with_invalid_request(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all batches when sending invalid endpoint&quot;, &quot;Test the Batch using GET&quot;](20)" classname="testrunner.Testrunhtml" time="0.047">
+    <system-out><![CDATA[
+@getallbatches @test3getallbatches
+Scenario Outline: Test if user is able to get all batches when sending invalid endpoint                    # src/test/resources/features/Getallbatchesbackup.feature:43
+  Given The user sends base url as a part of request to get all batches                                    # stepdefinitions.GetallbatchesSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_all_batches()
+  Then The content type of response header should be application/json to get all batches                   # stepdefinitions.GetallbatchesSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_all_batches()
+  When User sends request with invalid endpoint for all batches                                            # stepdefinitions.GetallbatchesSDbackup.user_sends_request_with_invalid_endpoint_for_all_batches()
+  Then User should receive response with Not found status code for all batches                             # stepdefinitions.GetallbatchesSDbackup.user_should_receive_response_with_not_found_status_code_for_all_batches()
+  And The response body should contain error message from "11" "API" for all batches with invalid endpoint # stepdefinitions.GetallbatchesSDbackup.the_response_body_should_contain_error_message_from_for_all_batches_with_invalid_endpoint(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 404 for all batches with invalid endpoint                         # stepdefinitions.GetallbatchesSDbackup.the_status_line_should_be_http_for_all_batches_with_invalid_endpoint(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all Programs when sending valid request&quot;, &quot;Test the Program using GET&quot;](21)" classname="testrunner.Testrunhtml" time="0.056">
+    <system-out><![CDATA[
+@Getallprograms @testcase1programs
+Scenario Outline: Test if user is able to get all Programs when sending valid request     # src/test/resources/features/Getallprogbackup.feature:16
+  Given The user sends base url as a part of request to get all Programs                  # stepdefinitions.GetallprogSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_all_programs()
+  Then The content type of response header should be application/json to get all Programs # stepdefinitions.GetallprogSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_all_programs()
+  When User sends request with valid endpoint to get all Programs                         # stepdefinitions.GetallprogSDbackup.user_sends_request_with_valid_endpoint_to_get_all_programs()
+  Then User should receive response with success status code for all Programs             # stepdefinitions.GetallprogSDbackup.user_should_receive_response_with_success_status_code_for_all_programs()
+  And The response body should contain details of the Program validated from "12" "API"   # stepdefinitions.GetallprogSDbackup.the_response_body_should_contain_details_of_the_program_validated_from(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 200 for all Programs with valid request          # stepdefinitions.GetallprogSDbackup.the_status_line_should_be_http_for_all_programs_with_valid_request(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all Programs when sending invalid request&quot;, &quot;Test the Program using GET&quot;](22)" classname="testrunner.Testrunhtml" time="0.051">
+    <system-out><![CDATA[
+@Getallprograms @testcase2programs
+Scenario Outline: Test if user is able to get all Programs when sending invalid request   # src/test/resources/features/Getallprogbackup.feature:26
+  Given The user sends base url as a part of request to get all Programs                  # stepdefinitions.GetallprogSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_all_programs()
+  Then The content type of response header should be application/json to get all Programs # stepdefinitions.GetallprogSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_all_programs()
+  When User sends POST, PUT, PATCH, DELETE requests with valid endpoint for all Programs  # stepdefinitions.GetallprogSDbackup.user_sends_post_put_patch_delete_requests_with_valid_endpoint_for_all_programs()
+  Then User should receive response with Method Not Allowed status code for all Programs  # stepdefinitions.GetallprogSDbackup.user_should_receive_response_with_method_not_allowed_status_code_for_all_programs()
+  And The response body should contain error message from "9" "API" for all Programs      # stepdefinitions.GetallprogSDbackup.the_response_body_should_contain_error_message_from_for_all_programs(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 405 for all Programs with invalid request        # stepdefinitions.GetallprogSDbackup.the_status_line_should_be_http_for_all_programs_with_invalid_request(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all Programs when sending invalid endpoint&quot;, &quot;Test the Program using GET&quot;](23)" classname="testrunner.Testrunhtml" time="0.04">
+    <system-out><![CDATA[
+@Getallprograms @testcase3programs
+Scenario Outline: Test if user is able to get all Programs when sending invalid endpoint  # src/test/resources/features/Getallprogbackup.feature:37
+  Given The user sends base url as a part of request to get all Programs                  # stepdefinitions.GetallprogSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_all_programs()
+  Then The content type of response header should be application/json to get all Programs # stepdefinitions.GetallprogSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_all_programs()
+  When User sends request with invalid endpoint for all Programs                          # stepdefinitions.GetallprogSDbackup.user_sends_request_with_invalid_endpoint_for_all_programs()
+  Then User should receive response with Not found status code for all Programs           # stepdefinitions.GetallprogSDbackup.user_should_receive_response_with_not_found_status_code_for_all_programs()
+  And The response body should contain error message from "11" "API" for all the Programs # stepdefinitions.GetallprogSDbackup.the_response_body_should_contain_error_message_from_for_all_the_programs(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 404 for all Programs                             # stepdefinitions.GetallprogSDbackup.the_status_line_should_be_http_for_all_programs(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user able to get a Batch by progID when sending valid request&quot;, &quot;To test the Batch  by program  ID using Get Method.&quot;](24)" classname="testrunner.Testrunhtml" time="0.047">
+    <system-out><![CDATA[
+@getbatchbyprogID @getbatchbyprogID
+Scenario: Test if user able to get a Batch by progID when sending valid request              # src/test/resources/features/Getbatchbyprogid.feature:9
+  Given User sends request with base url forbatch by progid                                  # stepdefinitions.Getbatchbyprogid.user_sends_request_with_base_url_forbatch_by_progid()
+  Then The content type of response header should be application/json to get for batchprogID # stepdefinitions.Getbatchbyprogid.the_content_type_of_response_header_should_be_application_json_to_get_for_batchprog_id()
+  When User send a request with valid endpoint to get batchprogID                            # stepdefinitions.Getbatchbyprogid.user_send_a_request_with_valid_endpoint_to_get_batchprog_id()
+  Then User should receive response with success status code for Batchprogid                 # stepdefinitions.Getbatchbyprogid.user_should_receive_response_with_success_status_code_for_batchprogid()
+  And Validate Get batch by batchprogID Schema in json format                                # stepdefinitions.Getbatchbyprogid.validate_get_batch_by_batchprog_id_schema_in_json_format()
+  And The status line should beHTTP/1.1 200for valid batchprogid                             # stepdefinitions.Getbatchbyprogid.the_status_line_should_be_http_200for_valid_batchprogid(java.lang.Double)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get batch Id when sending invalid request&quot;, &quot;To test the Batch  by program  ID using Get Method.&quot;](25)" classname="testrunner.Testrunhtml" time="0.047">
+    <system-out><![CDATA[
+@getbatchbyprogID @getbatchbyprogID
+Scenario: Test if user is able to get batch Id when sending invalid request                  # src/test/resources/features/Getbatchbyprogid.feature:17
+  Given User sends request with base url forbatch by progid                                  # stepdefinitions.Getbatchbyprogid.user_sends_request_with_base_url_forbatch_by_progid()
+  Then The content type of response header should be application/json to get for batchprogID # stepdefinitions.Getbatchbyprogid.the_content_type_of_response_header_should_be_application_json_to_get_for_batchprog_id()
+  When User send a invalid request with valid endpoint batchprogid                           # stepdefinitions.Getbatchbyprogid.user_send_a_invalid_request_with_valid_endpoint_batchprogid()
+  Then Verify response with status code 'Method Not Allowed' batchprogid                     # stepdefinitions.Getbatchbyprogid.verify_response_with_status_code_batchprogid(java.lang.String)
+  And Validate Get batch by batchprogID Schema in json format                                # stepdefinitions.Getbatchbyprogid.validate_get_batch_by_batchprog_id_schema_in_json_format()
+  And The status line should beHTTP/1.1 405for valid batchprogid                             # stepdefinitions.Getbatchbyprogid.the_status_line_should_be_http_405for_valid_batchprogid(java.lang.Double)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to getbatchbyprogID when sending invalid endpoint&quot;, &quot;To test the Batch  by program  ID using Get Method.&quot;](26)" classname="testrunner.Testrunhtml" time="0.081">
+    <system-out><![CDATA[
+@getbatchbyprogID @getbatchbyprogID
+Scenario: Test if user is able to getbatchbyprogID when sending invalid endpoint             # src/test/resources/features/Getbatchbyprogid.feature:25
+  Given User sends request with base url forbatch by progid                                  # stepdefinitions.Getbatchbyprogid.user_sends_request_with_base_url_forbatch_by_progid()
+  Then The content type of response header should be application/json to get for batchprogID # stepdefinitions.Getbatchbyprogid.the_content_type_of_response_header_should_be_application_json_to_get_for_batchprog_id()
+  When User send a invalid endpoint with valid request for batchprogId                       # stepdefinitions.Getbatchbyprogid.user_send_a_invalid_endpoint_with_valid_request_for_batchprog_id()
+  Then Verify response with status code 'Bad Request' batchprogid                            # stepdefinitions.Getbatchbyprogid.verify_response_with_status_code_batchprogid(java.lang.String)
+  And Validate Get batch by batchprogID Schema in json format                                # stepdefinitions.Getbatchbyprogid.validate_get_batch_by_batchprog_id_schema_in_json_format()
+  And The status line should be HTTP/1.1 400 for invalid endpoint batchprogid                # stepdefinitions.Getbatchbyprogid.the_status_line_should_be_http_for_invalid_endpoint_batchprogid(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get batch by name when sending valid request&quot;, &quot;Test the Batch by name using GET&quot;](27)" classname="testrunner.Testrunhtml" time="0.11">
+    <system-out><![CDATA[
+@getbatchbyname @test1getbatchbyname
+Scenario Outline: Test if user is able to get batch by name when sending valid request        # src/test/resources/features/Getbathbynamebackup.feature:16
+  Given The user sends base url as a part of request to get batch by name                     # stepdefinitions.GetbatchbynameSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_batch_by_name()
+  Then The content type of response header should be application/json to get batch by name    # stepdefinitions.GetbatchbynameSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_batch_by_name()
+  When User sends request with valid endpoint to get batch by name                            # stepdefinitions.GetbatchbynameSDbackup.user_sends_request_with_valid_endpoint_to_get_batch_by_name()
+  Then User should receive response with success status code for batch by name                # stepdefinitions.GetbatchbynameSDbackup.user_should_receive_response_with_success_status_code_for_batch_by_name()
+  And The response body should contain all the details of the requested batch from "13" "API" # stepdefinitions.GetbatchbynameSDbackup.the_response_body_should_contain_all_the_details_of_the_requested_batch_from(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 200 for batch by name                                # stepdefinitions.GetbatchbynameSDbackup.the_status_line_should_be_http_for_batch_by_name(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get batch by name when sending invalid request&quot;, &quot;Test the Batch by name using GET&quot;](28)" classname="testrunner.Testrunhtml" time="0.042">
+    <system-out><![CDATA[
+@getbatchbyname @test2getbatchbyname
+Scenario Outline: Test if user is able to get batch by name when sending invalid request                 # src/test/resources/features/Getbathbynamebackup.feature:27
+  Given The user sends base url as a part of request to get batch by name                                # stepdefinitions.GetbatchbynameSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_batch_by_name()
+  Then The content type of response header should be application/json to get batch by name               # stepdefinitions.GetbatchbynameSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_batch_by_name()
+  When User sends POST, PUT, PATCH, DELETE requests with valid endpoint for batch by name                # stepdefinitions.GetbatchbynameSDbackup.user_sends_post_put_patch_delete_requests_with_valid_endpoint_for_batch_by_name()
+  Then User should receive response with Method Not Allowed status code for batch by name                # stepdefinitions.GetbatchbynameSDbackup.user_should_receive_response_with_method_not_allowed_status_code_for_batch_by_name()
+  And The response body should contain error message Method Not Allowed for batch by name from "9" "API" # stepdefinitions.GetbatchbynameSDbackup.the_response_body_should_contain_error_message_method_not_allowed_for_batch_by_name_from(java.lang.String,java.lang.String)
+  And The status line should be HTTP/1.1 405 for metod not allowed batch by name                         # stepdefinitions.GetbatchbynameSDbackup.the_status_line_should_be_http_for_metod_not_allowed_batch_by_name(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get batch by name when sending invalid endpoint&quot;, &quot;Test the Batch by name using GET&quot;](29)" classname="testrunner.Testrunhtml" time="0.034">
+    <system-out><![CDATA[
+@getbatchbyname @test3getbatchbyname
+Scenario Outline: Test if user is able to get batch by name when sending invalid endpoint        # src/test/resources/features/Getbathbynamebackup.feature:36
+  Given The user sends base url as a part of request to get batch by name                        # stepdefinitions.GetbatchbynameSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_batch_by_name()
+  Then The content type of response header should be application/json to get batch by name       # stepdefinitions.GetbatchbynameSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_batch_by_name()
+  When User sends request with invalid endpoint for batch by name from "6" "API"                 # stepdefinitions.GetbatchbynameSDbackup.user_sends_request_with_invalid_endpoint_for_batch_by_name_from(java.lang.String,java.lang.String)
+  Then User should receive response with Bad Request status code for batch by name               # stepdefinitions.GetbatchbynameSDbackup.user_should_receive_response_with_bad_request_status_code_for_batch_by_name()
+  And The response body should contain error message ENTITY_DOES_NOT_EXIST for the batch by name # stepdefinitions.GetbatchbynameSDbackup.the_response_body_should_contain_error_message_entity_does_not_exist_for_the_batch_by_name()
+  And The status line should be HTTP/1.1 400 for the batch by name                               # stepdefinitions.GetbatchbynameSDbackup.the_status_line_should_be_http_for_the_batch_by_name(java.lang.Double,java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if JSON schema matches the response while sending valid request&quot;, &quot;Test the Batch by name using GET&quot;](30)" classname="testrunner.Testrunhtml" time="0.026">
+    <system-out><![CDATA[
+@getbatchbyname @test4getbatchbyname
+Scenario: Test if JSON schema matches the response while sending valid request             # src/test/resources/features/Getbathbynamebackup.feature:39
+  Given The user sends base url as a part of request to get batch by name                  # stepdefinitions.GetbatchbynameSDbackup.the_user_sends_base_url_as_a_part_of_request_to_get_batch_by_name()
+  Then The content type of response header should be application/json to get batch by name # stepdefinitions.GetbatchbynameSDbackup.the_content_type_of_response_header_should_be_application_json_to_get_batch_by_name()
+  Then The JSON schema should match the response to get batch by name                      # stepdefinitions.GetbatchbynameSDbackup.the_json_schema_should_match_the_response_to_get_batch_by_name()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to Get a Program by ID with valid request&quot;, &quot;To test the program by ID using Get Method&quot;](31)" classname="testrunner.Testrunhtml" time="0.04">
+    <system-out><![CDATA[
+@getprogbyid
+Scenario: User able to Get a Program by ID with valid request # src/test/resources/features/Getprogrambyid.feature:5
+  Given User sends valid base url to get Program by Id        # stepdefinitions.Getprogrambyid.user_sends_valid_base_url_to_get_program_by_id()
+  When User sends request with its endpoint to get Program ID # stepdefinitions.Getprogrambyid.user_sends_request_with_its_endpoint_to_get_program_id()
+  Then User should receive response with status code          # stepdefinitions.Getprogrambyid.user_should_receive_response_with_status_code()
+  And Validate response body  to get Program by ID            # stepdefinitions.Getprogrambyid.validate_response_body_to_get_program_by_id()
+  And Verify status line should be success line               # stepdefinitions.Getprogrambyid.verify_status_line_should_be_success_line()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to Get a Program by ID with invalid request&quot;, &quot;To test the program by ID using Get Method&quot;](32)" classname="testrunner.Testrunhtml" time="0.033">
+    <system-out><![CDATA[
+@getprogbyid @getprogbyid
+Scenario: User able to Get a Program by ID with invalid request # src/test/resources/features/Getprogrambyid.feature:14
+  Given User sends the url with invalid request                 # stepdefinitions.Getprogrambyid.user_sends_the_url_with_invalid_request()
+  When User sends the request with its invalid request          # stepdefinitions.Getprogrambyid.user_sends_the_request_with_its_invalid_request()
+  Then Validate response with status code Method not allowed    # stepdefinitions.Getprogrambyid.validate_response_with_status_code_method_not_allowed()
+  And Validate response body with error message not allowed     # stepdefinitions.Getprogrambyid.validate_response_body_with_error_message_not_allowed()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User able to Get a Program by ID with invalid endpoint&quot;, &quot;To test the program by ID using Get Method&quot;](33)" classname="testrunner.Testrunhtml" time="0.024">
+    <system-out><![CDATA[
+@getprogbyid @getprogbyid
+Scenario: User able to Get a Program by ID with invalid endpoint                 # src/test/resources/features/Getprogrambyid.feature:22
+  Given User sends the request to get Program ID                                 # stepdefinitions.Getprogrambyid.user_sends_the_request_to_get_program_id()
+  When User sends a request body with invalid endpoint                           # stepdefinitions.Getprogrambyid.user_sends_a_request_body_with_invalid_endpoint()
+  Then Verify response with status code Bad Request                              # stepdefinitions.Getprogrambyid.verify_response_with_status_code_bad_request()
+  And Validate the response body with error code message 'ENTITY_DOES_NOT_EXIST' # stepdefinitions.Getprogrambyid.validate_the_response_body_with_error_code_message(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all programs when sending invalid base url&quot;, &quot;Test Batch and Program with invalid uri&quot;](34)" classname="testrunner.Testrunhtml" time="0.036">
+    <system-out><![CDATA[
+@Invaliduri @getallprograms
+Scenario: Test if user is able to get all programs when sending invalid base url  # src/test/resources/features/Invaliduri.feature:8
+  Given The user sends invalid base url                                           # stepdefinitions.InvaliduriSD.the_user_sends_invalid_base_url()
+  When User sends request with valid endpoint for getting all the programs        # stepdefinitions.InvaliduriSD.user_sends_request_with_valid_endpoint_for_getting_all_the_programs()
+  Then User should receive response with service unavailable status code          # stepdefinitions.InvaliduriSD.user_should_receive_response_with_service_unavailable_status_code()
+  And The response body should contain application error message for all programs # stepdefinitions.InvaliduriSD.the_response_body_should_contain_application_error_message_for_all_programs()
+  And The content type of response header should be text/html for all programs    # stepdefinitions.InvaliduriSD.the_content_type_of_response_header_should_be_text_html_for_all_programs()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get all batches when sending invalid base url&quot;, &quot;Test Batch and Program with invalid uri&quot;](35)" classname="testrunner.Testrunhtml" time="0.024">
+    <system-out><![CDATA[
+@Invaliduri @getallbatches
+Scenario: Test if user is able to get all batches when sending invalid base url  # src/test/resources/features/Invaliduri.feature:14
+  Given The user sends invalid base url                                          # stepdefinitions.InvaliduriSD.the_user_sends_invalid_base_url()
+  When User sends request with valid endpoint for getting all the batches        # stepdefinitions.InvaliduriSD.user_sends_request_with_valid_endpoint_for_getting_all_the_batches()
+  Then User should receive response with service unavailable status code         # stepdefinitions.InvaliduriSD.user_should_receive_response_with_service_unavailable_status_code()
+  And The response body should contain application error message for all batches # stepdefinitions.InvaliduriSD.the_response_body_should_contain_application_error_message_for_all_batches()
+  And The content type of response header should be text/html for all batches    # stepdefinitions.InvaliduriSD.the_content_type_of_response_header_should_be_text_html_for_all_batches()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Test if user is able to get the batch by batch name when sending invalid base url&quot;, &quot;Test Batch and Program with invalid uri&quot;](36)" classname="testrunner.Testrunhtml" time="0.03">
+    <system-out><![CDATA[
+@Invaliduri @getallbatchbyname
+Scenario: Test if user is able to get the batch by batch name when sending invalid base url # src/test/resources/features/Invaliduri.feature:20
+  Given The user sends invalid base url                                                     # stepdefinitions.InvaliduriSD.the_user_sends_invalid_base_url()
+  When User sends request with valid endpoint for getting the requested batch detail        # stepdefinitions.InvaliduriSD.user_sends_request_with_valid_endpoint_for_getting_the_requested_batch_detail()
+  Then User should receive response with service unavailable status code                    # stepdefinitions.InvaliduriSD.user_should_receive_response_with_service_unavailable_status_code()
+  And The response body should contain application error message for getting batch by name  # stepdefinitions.InvaliduriSD.the_response_body_should_contain_application_error_message_for_getting_batch_by_name()
+  And The content type of response header should be text/html for getting batch by name     # stepdefinitions.InvaliduriSD.the_content_type_of_response_header_should_be_text_html_for_getting_batch_by_name()
+]]></system-out>
+  </testcase>
+</testsuite>

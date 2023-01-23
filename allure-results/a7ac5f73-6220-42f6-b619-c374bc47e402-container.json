@@ -1,0 +1,1 @@
+{"uuid":"a7ac5f73-6220-42f6-b619-c374bc47e402","name":"Scenario: Test if user is able to get the batch by batch name when sending invalid base url","children":["f4804f0d-5725-4e64-8e90-ae06caa9cbb6"],"befores":[],"afters":[],"start":1674340366080,"stop":1674340366089}

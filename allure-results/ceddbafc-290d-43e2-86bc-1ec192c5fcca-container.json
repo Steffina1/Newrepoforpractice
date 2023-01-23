@@ -1,0 +1,1 @@
+{"uuid":"ceddbafc-290d-43e2-86bc-1ec192c5fcca","name":"Scenario: Test if user is able to getbatchbyprogID when sending invalid endpoint","children":["076467ac-855a-4842-bd58-2c8da038329e"],"befores":[],"afters":[],"start":1674256494660,"stop":1674256494666}
